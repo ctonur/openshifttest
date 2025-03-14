@@ -1,0 +1,11 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: rest
+  namespace: cengiz
+  podSelector: {}
+  policyTypes:
+    - Ingress
+	   443  80 
+    - Egress
+	   103.043/34
